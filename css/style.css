@@ -50,6 +50,21 @@ section:first-child{
 .item .cover,.item .cover img{
   width: 70px;
 }
+.loading{
+  height: 20px;
+  text-align: center;
+}
+.loading span{
+  display: block;
+}
+.loading .iconfont{
+  display: inline-block;
+  animation: 1s rotate linear infinite;
+}
+@keyframes rotate{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
 footer{
   position: absolute;
   bottom: 0;
@@ -69,4 +84,29 @@ footer>div.active{
 footer >div> span{
   display: block;
   text-align: center;
+}
+.search-area{
+  color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.search-area input{
+      width: calc(100% - 50px);
+    padding: 8px;
+    background-color: #eee;
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+}
+.search-area .button{
+  position: absolute;
+    right: 0;
+    padding: 8px 10px;
+    background: #FF5722;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
 }
